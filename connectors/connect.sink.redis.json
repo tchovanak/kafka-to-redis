@@ -6,9 +6,8 @@
     "topics": "analytics.server.logs,analytics.user.events",
     "key.converter": "org.apache.kafka.connect.storage.StringConverter",
     "key.converter.schemas.enable": false,
-    "value.converter": "org.apache.kafka.connect.json.JsonConverter",
+    "value.converter": "org.apache.kafka.connect.storage.StringConverter",
     "value.converter.schemas.enable": false,
-    "connection.url": "http://redis:6397",
-    "name": "connect.sink.redis"
+    "redis.hosts": "redis:6379"
   }
 }
